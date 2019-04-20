@@ -11,7 +11,7 @@ const forecast = (latitude, longitude, callback) => {
       callback('Unable to find the place', undefined);
     }
     else{
-      callback(undefined, 'It is currently ' + body.currently.temperature + ' degrees out. There is ' + body.currently.precipProbability + '% chance of rain');
+      callback(undefined, 'It is currently ' + body.currently.temperature + ' degrees out. There is ' + body.currently.precipProbability + '% chance of rain. The ozone cover is ' + body.currently.ozone + ' units.');
     }
   })
 }
